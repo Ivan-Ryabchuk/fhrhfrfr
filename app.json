@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "Самозванец",
+    "slug": "find-imposter",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "find-imposter",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#050510"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ryabchuk.samozvantsy"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#050510"
+      },
+      "package": "com.ryabchuk.samozvantsy",
+      "permissions": [
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.ACCESS_WIFI_STATE",
+        "com.google.android.gms.permission.AD_ID"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      "expo-web-browser",
+      "./plugins/withYandexAds"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
